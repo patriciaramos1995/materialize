@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=devicewidth,
+initial-scale=1">
+ <meta charset="utf-8">
+ <title>Pedidos</title>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <!-- <link rel="stylesheet" href="icons/material.css"> -->
+ <link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+<div class="topo-fixo z-depth-1">
+	<div class="valign-wrapper pink lighten-2 white-text">
+		<h5 class="titulo">Pedidos</h5>
+		<div>
+			<i class="material-icons waves-effect waves-light waves-circle dropdown-button"
+			data-activates="submenu" data-gutter="5" data-constrainwidth="false">more_vert</i>
+		</div>
+	</div>
+
+<ul class="tabs pink darken-3">
+ <li class="tab col s6">
+	<a href="#doces">Doces</a>
+ </li>
+ <li class="tab col s6">
+	<a href="#bebidas">Bebidas</a>
+ </li>
+ </ul>
+
+<div id="doces" class="section">
+<div class="collection brown-text">
+	<a class="collection-item waves-effect">Pudim de leite</a>
+	<a class="collection-item waves-effect">Donut</a>
+	<a class="collection-item waves-effect">Cocada</a>
+	<a class="collection-item waves-effect">Brigadeiro</a>
+</div>
+</div>
+<div id="bebidas" class="section">
+	<h6 class="container brown-text">Cafés</h6>
+<div class="collection">
+	<a class="collection-item waves-effect">Espresso</a>
+	<a class="collection-item waves-effect">Capuccino</a>
+	<a class="collection-item waves-effect">Mocachino</a>
+</div>
+	<h6 class="container brown-text">Refrigerantes</h6>
+<div class="collection">
+	<a class="collection-item waves-effect">Soda</a>
+	<a class="collection-item waves-effect">Guaraná</a>
+	<a class="collection-item waves-effect">Coca</a>
+</div>
+	<h6 class="container brown-text">Sucos</h6>
+<div class="collection">
+	<a class="collection-item waves-effect">Melancia</a>
+	<a class="collection-item waves-effect">Tangerina</a>
+	<a class="collection-item waves-effect">Limão</a>
+</div>
+</div> 
+</div>
+<div class="fixed-action-btn">
+<a class="btn-floating btn-large waves-effect waves-light pink lighten-2 modal-trigger" href="#confirmacao" id="confirmar">
+<i class="material-icons">OK</i>
+</a>
+</div>
+<div id="confirmacao" class="modal modal-fixed-footer">
+	<div class="modal-content">
+		<h5>Resumo do pedido</h5>
+			<input id="numero-mesa" type="number" class="validate" placeholder="Número da mesa">
+			<blockquote id="resumo"></blockquote>
+	</div>
+	<div class="modal-footer">
+		<button class="btn pink lighten-2 waves-effect waveslight modal-close">Pedir</button>
+		<button class="btn-flat waves-effect waves-red modal-close acao-limpar">Cancelar</button>
+	</div>
+</div>
+<ul id="submenu" class="dropdown-content">
+<li><a class="black-text acao-limpar">Limpar</a></li>
+</ul>
+
+ <script src="js/jquery-3.1.0.min.js"></script>
+ <script src="js/materialize.min.js"></script>
+ <script src="js/app.js"></script>
+</body>
+</html>
